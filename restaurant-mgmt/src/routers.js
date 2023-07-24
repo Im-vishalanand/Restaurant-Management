@@ -7,14 +7,14 @@ import UpdateSection from "./components/Update.vue";
 
 const routes = [
   {
-    name: "HomePage",
-    component: HomePage,
-    path: "/",
-  },
-  {
     name: "SignUp",
     component: SignUp,
     path: "/sign-up",
+  },
+  {
+    name: "HomePage",
+    component: HomePage,
+    path: "/",
   },
   {
     name: "LoginPage",
