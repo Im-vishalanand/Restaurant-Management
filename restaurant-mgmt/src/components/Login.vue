@@ -9,7 +9,7 @@
     </div>
     <p>
         New here?
-        <router-link to="/sign-up" style="text-decoration: none; color: red">Sign Up</router-link>
+        <router-link to="/" style="text-decoration: none; color: red">Sign Up</router-link>
     </p>
 </template>
 

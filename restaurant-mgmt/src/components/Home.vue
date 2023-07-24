@@ -52,11 +52,8 @@ export default {
                 Swal.fire({
                     title: "Restaurant Deleted Successfully !",
                     icon: "success",
-                    // showConfirmButton: false, // Remove the 'OK' button
+                    // showConfirmButton: false,        // Remove the 'OK' button
                     timer: 2000, // Set the timer for 2 seconds (adjust as needed)
-                    willClose: () => {
-                        // window.location = '/'; // Redirect after the animation completes
-                    },
                 });
             } else {
                 Swal.fire({
@@ -70,13 +67,13 @@ export default {
             }
         },
         async loadData() {
-            let signupData = localStorage.getItem("user-info");
-            let loginData = localStorage.getItem("login-info");
+            let signupData = localStorage.getItem("user-info") || 0;
+            let loginData = localStorage.getItem("login-info") || 0;
 
             this.name = JSON.parse(loginData).name;
 
             if (!signupData && !loginData) {
-                this.$router.push({ name: "SignUp" });
+                this.$router.push({name : 'SignUp'})
             }
 
             let result = await axios.get("https://64be88685ee688b6250c9330.mockapi.io/restaurant");

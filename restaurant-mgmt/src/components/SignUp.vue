@@ -42,7 +42,7 @@ export default {
                     title: 'Sign Up Successful !',
                     text: 'Welcome: ' + this.name,
                     icon: 'success',
-                    // showConfirmButton: false, // Remove the 'OK' button
+                    // showConfirmButton: false,         // Remove the 'OK' button
                     timer: 2000, // Set the timer for 2 seconds (adjust as needed)
                 });
                 this.$router.push({ name: "login" });
