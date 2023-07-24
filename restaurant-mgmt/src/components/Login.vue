@@ -28,7 +28,7 @@ export default {
     },
     methods: {
         async login() {
-            let result = await axios.get(`http://localhost:3000/users?email=${this.email}&password=${this.password}`, {
+            let result = await axios.get(`https://64be88685ee688b6250c9330.mockapi.io/user?email=${this.email}&password=${this.password}`, {
             });
 
             if (result.status == 200 && result.data.length>0) {

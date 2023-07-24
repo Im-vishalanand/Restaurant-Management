@@ -42,7 +42,7 @@ export default {
     methods: {
         async deleteRestaurant(id) {
             let result = await axios.delete(
-                "http://localhost:3000/restaurants/" + id
+                "https://64be88685ee688b6250c9330.mockapi.io/restaurant/" + id
             );
 
             // console.log(result.status);
@@ -79,7 +79,7 @@ export default {
                 this.$router.push({ name: "SignUp" });
             }
 
-            let result = await axios.get("http://localhost:3000/restaurants");
+            let result = await axios.get("https://64be88685ee688b6250c9330.mockapi.io/restaurant");
 
             // console.log(result.data)
 

@@ -38,7 +38,7 @@ export default {
     },
     methods: {
         async updateRestaurant() {
-            const result = await axios.put('http://localhost:3000/restaurants/'+this.$route.params.id, {
+            const result = await axios.put('https://64be88685ee688b6250c9330.mockapi.io/restaurant/'+this.$route.params.id, {
                 name : this.restaurant.name,
                 contact : this.restaurant.contact,
                 address : this.restaurant.address,
@@ -77,7 +77,7 @@ export default {
             this.$router.push({name : 'SignUp'})
         }
 
-        const result = await axios.get('http://localhost:3000/restaurants/'+this.$route.params.id);
+        const result = await axios.get('https://64be88685ee688b6250c9330.mockapi.io/restaurant/'+this.$route.params.id);
 
         // console.log(result.data)
 

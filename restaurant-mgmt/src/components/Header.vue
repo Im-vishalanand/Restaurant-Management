@@ -1,6 +1,6 @@
 <template>
     <div class="nav">
-        <router-link to="http://localhost:3000/">Home</router-link>
+        <router-link to="/">Home</router-link>
         <router-link to="/add">Add Restaurant</router-link>
         <a v-on:click="logout" href="#">Logout</a>
     </div>

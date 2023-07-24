@@ -37,7 +37,7 @@ export default {
     methods: {
         async addRestaurant(){
 
-            const result = await axios.post('http://localhost:3000/restaurants', {
+            const result = await axios.post('https://64be88685ee688b6250c9330.mockapi.io/restaurant', {
                 name : this.restaurant.name,
                 contact : this.restaurant.contact,
                 address : this.restaurant.address,

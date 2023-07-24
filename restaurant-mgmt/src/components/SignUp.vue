@@ -29,7 +29,7 @@ export default {
     },
     methods: {
         async signUp() {
-            let result = await axios.post("http://localhost:3000/users", {
+            let result = await axios.post("https://64be88685ee688b6250c9330.mockapi.io/user", {
                 name: this.name,
                 email: this.email,
                 password: this.password,
