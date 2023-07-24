@@ -1,5 +1,5 @@
-import HomePage from "./components/Home.vue";
 import SignUp from "./components/SignUp.vue";
+import HomePage from "./components/Home.vue";
 import { createRouter, createWebHistory } from "vue-router";
 import LoginPage from "./components/Login.vue";
 import AddSection from "./components/Add.vue";
