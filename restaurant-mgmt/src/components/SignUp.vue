@@ -44,10 +44,8 @@ export default {
                     icon: 'success',
                     // showConfirmButton: false, // Remove the 'OK' button
                     timer: 2000, // Set the timer for 2 seconds (adjust as needed)
-                    willClose: () => {
-                        window.location = 'http://localhost:8080/login'; // Redirect after the animation completes
-                    }
                 });
+                this.$router.push({ name: "login" });
             }
             else{
                 Swal.fire({
